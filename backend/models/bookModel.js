@@ -1,14 +1,14 @@
-import { Sequelize } from "sequelize/types";
-import db from "../config/database";
+import { Sequelize } from "sequelize";
+import db from "../config/database.js";
 
-const { DataType } = Sequelize;
+const { DataTypes } = Sequelize;
 
 const Book = db.define('books', {
-    title: {
-        type: DataType.STRING
+    title:{
+        type: DataTypes.STRING
     },
     writer: {
-        type: DataType.STRING
+        type: DataTypes.STRING
     },
 }, {
     freezeTableName: true

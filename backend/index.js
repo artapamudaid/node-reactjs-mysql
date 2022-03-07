@@ -1,6 +1,6 @@
 import express from "express";
-import db from "./config/database";
-import bookRoutes from "./routes/index";
+import db from "./config/database.js";
+import bookRoutes from "./routes/index.js";
 import cors from "cors";
 
 const app = express();
